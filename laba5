@@ -1,0 +1,25 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner cin = new Scanner(System.in);
+
+        System.out.print("Введите три числа: ");
+        int number1 = cin.nextInt();
+        int number2 = cin.nextInt();
+        int number3 = cin.nextInt();
+
+        int minNumber = number1;
+        if (number2 < minNumber) {
+            minNumber = number2;
+        }
+        if (number3 < minNumber) {
+            minNumber = number3;
+        }
+
+        System.out.println("Минимальное: " + minNumber);
+    }
+}
