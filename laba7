@@ -1,0 +1,38 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner cin = new Scanner(System.in);
+
+        System.out.print("Введите код города: ");
+        int code = cin.nextInt();
+        int time = 10;
+        double price;
+
+        switch (code)
+        {
+            case 905:
+                price = time * 4.15;
+                System.out.println("Москва. Стоимость разговора: " + price);
+                break;
+            case 194:
+                price = time * 1.98;
+                System.out.println("Ростов. Стоимость разговора: " + price);
+                break;
+            case 491:
+                price = time * 2.69;
+                System.out.println("Краснодар. Стоимость разговора: " + price);
+                break;
+            case 800:
+                price = time * 5.00;
+                System.out.println("Киров. Стоимость разговора: " + price);
+                break;
+            default:
+                System.out.println("Неверный код!");
+                break;
+        }
+    }
+}
