@@ -1,0 +1,29 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner cin = new Scanner(System.in);
+
+        System.out.print("Введите число: ");
+        int number = cin.nextInt();
+
+        if (number < 0) {
+            if (number % 2 == 0) {
+                System.out.println("отрицательное чётное число");
+            } else {
+                System.out.println("отрицательное нечётное число");
+            }
+        } else if (number > 0) {
+            if (number % 2 == 0) {
+                System.out.println("положительное чётное число");
+            } else {
+                System.out.println("положительное нечётное число");
+            }
+        } else {
+            System.out.println("нулевое число");
+        }
+    }
+}
